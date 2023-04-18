@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Work+Sans&display=swap');
+/*
+font-family: 'Comfortaa', cursive;
+font-family: 'Work Sans', sans-serif;
+*/
+
+#title {
+    font-family: 'Comfortaa', cursive;
+}
+
+#para {
+    font-family: 'Work Sans', sans-serif;
+}
