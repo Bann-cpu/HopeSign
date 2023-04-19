@@ -84,8 +84,8 @@ li {
 
 
 .home_div:hover #home_content {
-    transform: rotate(-15deg);
-    font-size: 1.2rem;
+    transform: rotate(-12deg);
+    font-size: 1.1rem;
 }
 
 .contact_div::before {
@@ -117,8 +117,7 @@ li {
 }
 
 #home_content {
-    right: 23rem;
-
+    right: 20.5rem;
 }
 
 #contact_content {
