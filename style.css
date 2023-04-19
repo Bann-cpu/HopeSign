@@ -38,24 +38,24 @@ li {
     position: relative;
 }
 
-.content_container>div {
-    height: 70px;
-    width: 70px;
-    background-color: #671C4D;
+.content_container {    
     border-radius: 100%;
     margin: 0 3rem;
     display: flex;
+    width: 500px;
+    justify-content: space-between;
     font-family: 'Comfortaa', cursive;
     color: #FFFFFF;
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
     z-index: 2;
+    background-color: red;
 }
 
-.faq_div::before,
-.contact_div::before,
-.home_div::before {
+#faq_div::before,
+#contact_div::before,
+#home_div::before {
     content: '';
     width: 70px;
     height: 70px;
@@ -66,9 +66,9 @@ li {
 }
 
 
-.faq_div:is(:hover)::before,
-.contact_div:is(:hover)::before,
-.home_div:is(:hover)::before {
+#faq_div:is(:hover)::before,
+#contact_div:is(:hover)::before,
+#home_div:is(:hover)::before {
     position: absolute;
     background-color: #962b70;
     transform: translateX(47px) translateY(-39%);
@@ -77,34 +77,32 @@ li {
 }
 
 
-.home_div::before {
+#home_div::before {
     left: 0%;
     top: 40%;
 }
 
-
-.home_div:hover #home_content {
+#home_div:hover #home_content {
     transform: rotate(-12deg);
     font-size: 1.1rem;
 }
 
-.contact_div::before {
+#contact_div::before {
     position: absolute;
     left: 33.5%;
     top: 40%;
 }
 
-.contact_div:hover #contact_content {
+#contact_div:hover #contact_content {
     transform: rotate(-13deg);
     font-size: 1.1rem;
 }
-
-.faq_div::before {
+#faq_div::before {
     left: 66.4%;
     top: 40%;
 }
 
-.faq_div:hover #faq_content {
+#faq_div:hover #faq_content {
     transform: rotate(-13deg);
     font-size: 1.2rem;
 }
