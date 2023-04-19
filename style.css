@@ -65,18 +65,21 @@ li {
     transition: all 1s ease;
 }
 
-.home_div::before {
-    left: 0%;
-    top: 40%;
-}
 
-.home_div:is(:hover)::before {
+.faq_div:is(:hover)::before, .contact_div:is(:hover)::before , .home_div:is(:hover)::before {
     position: absolute;
     background-color: #962b70;
     transform: translateX(47px) translateY(-39%);
     opacity: 0.5;
     z-index: -1;
 }
+
+
+.home_div::before {
+    left: 0%;
+    top: 40%;
+}
+
 
 .home_div:hover #home_content {
     transform: rotate(-15deg);
@@ -89,14 +92,6 @@ li {
     top: 40%;
 }
 
-.contact_div:is(:hover)::before {
-    position: absolute;
-    background-color: #962b70;
-    transform: translateX(47px) translateY(-39%);
-    opacity: 0.5;
-    z-index: -1;
-}
-
 .contact_div:hover #contact_content {
     transform: rotate(-13deg);
     font-size: 1.1rem;
@@ -105,14 +100,6 @@ li {
 .faq_div::before {
     left: 66.4%;
     top: 40%;
-}
-
-.faq_div:is(:hover)::before {
-    position: absolute;
-    background-color: #962b70;
-    transform: translateX(47px) translateY(-39%);
-    opacity: 0.5;
-    z-index: -1;
 }
 
 .faq_div:hover #faq_content {
@@ -166,3 +153,16 @@ li {
     position: absolute;
     top: 90%;
 }
+
+
+/*181 lignes avant -> 
+
+.faq_div:is(:hover)::before, .contact_div:is(:hover)::before , .home_div:is(:hover)::before {
+    position: absolute;
+    background-color: #962b70;
+    transform: translateX(47px) translateY(-39%);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+*/
