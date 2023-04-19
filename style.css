@@ -52,20 +52,25 @@ li {
     text-transform: uppercase;
     z-index: 2;
 }
-/*!modèle*/
+
+.faq_div::before,
+.contact_div::before,
 .home_div::before {
     content: '';
     width: 70px;
     height: 70px;
     border-radius: 100px;
     position: absolute;
-    left: 0%;
-    top: 40%;  
     display: inline-block;
     transition: all 1s ease;
 }
 
-.home_div:is(:hover)::before{
+.home_div::before {
+    left: 0%;
+    top: 40%;
+}
+
+.home_div:is(:hover)::before {
     position: absolute;
     background-color: #962b70;
     transform: translateX(47px) translateY(-39%);
@@ -73,26 +78,18 @@ li {
     z-index: -1;
 }
 
-.home_div:hover #home_content{
+.home_div:hover #home_content {
     transform: rotate(-15deg);
     font-size: 1.2rem;
 }
 
-
-/*?exemple*/
 .contact_div::before {
-    content: '';
-    width: 70px;
-    height: 70px;
-    border-radius: 100px;
     position: absolute;
     left: 33.5%;
-    top: 40%;  
-    display: inline-block;
-    transition: all 1s ease;
+    top: 40%;
 }
 
-.contact_div:is(:hover)::before{
+.contact_div:is(:hover)::before {
     position: absolute;
     background-color: #962b70;
     transform: translateX(47px) translateY(-39%);
@@ -100,25 +97,17 @@ li {
     z-index: -1;
 }
 
-.contact_div:hover #contact_content{
+.contact_div:hover #contact_content {
     transform: rotate(-13deg);
     font-size: 1.1rem;
 }
 
-/*?exemple*/
 .faq_div::before {
-    content: '';
-    width: 70px;
-    height: 70px;
-    border-radius: 100px;
-    position: absolute;
     left: 66.4%;
-    top: 40%;  
-    display: inline-block;
-    transition: all 1s ease;
+    top: 40%;
 }
 
-.faq_div:is(:hover)::before{
+.faq_div:is(:hover)::before {
     position: absolute;
     background-color: #962b70;
     transform: translateX(47px) translateY(-39%);
@@ -126,14 +115,14 @@ li {
     z-index: -1;
 }
 
-.faq_div:hover #faq_content{
+.faq_div:hover #faq_content {
     transform: rotate(-13deg);
     font-size: 1.2rem;
 }
 
 .content_container a {
     position: absolute;
-    top: 1.5rem;    
+    top: 1.5rem;
     transition: all 0.5s ease;
     transform-origin: top left;
 }
@@ -158,8 +147,6 @@ li {
     margin: 0 2rem;
 }
 
-
-
 #home_intro {
     position: relative;
     height: 700px;
@@ -175,7 +162,7 @@ li {
     font-weight: 900;
 }
 
-#home_intro > a > svg {
+#home_intro>a>svg {
     position: absolute;
-    top : 90%;
+    top: 90%;
 }
