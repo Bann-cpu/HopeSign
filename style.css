@@ -17,7 +17,8 @@ body {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: white;
+    opacity: 0.7;
 }
 
 li {
@@ -34,97 +35,63 @@ li {
 }
 
 .content_container {
-    display: flex;
-    position: relative;
-}
-
-.content_container {    
-    border-radius: 100%;
-    margin: 0 3rem;
-    display: flex;
     width: 500px;
-    justify-content: space-between;
+    height: 50px;
+    position: relative;
+    left: -10px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     font-family: 'Comfortaa', cursive;
-    color: #FFFFFF;
-    font-size: 16px;
-    font-weight: bold;
     text-transform: uppercase;
-    z-index: 2;
-    background-color: red;
+    color: white;
+    font-weight: 900;
 }
 
-#faq_div::before,
-#contact_div::before,
-#home_div::before {
-    content: '';
-    width: 70px;
-    height: 70px;
-    border-radius: 100px;
+/* === removing default button style ===*/
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+  
+  /* button styling */
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #37FF8B;
+    --fs-size: 1em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: 'Comfortaa', cursive;
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
     position: absolute;
-    display: inline-block;
-    transition: all 1s ease;
-}
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
 
-
-#faq_div:is(:hover)::before,
-#contact_div:is(:hover)::before,
-#home_div:is(:hover)::before {
-    position: absolute;
-    background-color: #962b70;
-    transform: translateX(47px) translateY(-39%);
-    opacity: 0.5;
-    z-index: -1;
-}
-
-
-#home_div::before {
-    left: 0%;
-    top: 40%;
-}
-
-#home_div:hover #home_content {
-    transform: rotate(-12deg);
-    font-size: 1.1rem;
-}
-
-#contact_div::before {
-    position: absolute;
-    left: 33.5%;
-    top: 40%;
-}
-
-#contact_div:hover #contact_content {
-    transform: rotate(-13deg);
-    font-size: 1.1rem;
-}
-#faq_div::before {
-    left: 66.4%;
-    top: 40%;
-}
-
-#faq_div:hover #faq_content {
-    transform: rotate(-13deg);
-    font-size: 1.2rem;
-}
-
-.content_container a {
-    position: absolute;
-    top: 1.5rem;
-    transition: all 0.5s ease;
-    transform-origin: top left;
-}
-
-#home_content {
-    right: 20.5rem;
-}
-
-#contact_content {
-    right: 11rem;
-}
-
-#faq_content {
-    right: 2rem;
-}
 
 #icon_name {
     font-family: 'Comfortaa', cursive;
@@ -150,5 +117,5 @@ li {
 
 #home_intro>a>svg {
     position: absolute;
-    top: 90%;
+    top: 95%;
 } 
