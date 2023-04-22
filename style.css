@@ -2,7 +2,7 @@
 
 /*
 font-family: 'Comfortaa', cursive;
-font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 */
 
 * {
@@ -98,13 +98,37 @@ li {
     font-family: 'Comfortaa', cursive;
     font-size: 32px;
     color: #FFFFFF;
-    margin: 0 2rem;
+    position: relative;
+    left: 50px;
+}
+
+#icon_name::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #571841;
+    height: 105%;
+    width: 100%;
+    border-left: solid 2px #37FF8B;
+    animation: animate 2s steps(14) forwards;
+}
+
+@keyframes animate {
+    from {
+        left: 0;
+    }
+
+    to {
+        width: 105%;
+        left: 100%;
+    }
 }
 
 #home_intro {
     position: relative;
     height: 700px;
-    width: 1535px;
+    width: 1600px;
     left: 5rem;
     top: 4.5rem;
 }
@@ -114,9 +138,22 @@ li {
     font-family: 'Work Sans', sans-serif;
     color: #fff;
     font-weight: 900;
+    display: flex;
 }
 
 #home_intro>a>svg {
     position: absolute;
     top: 95%;
+}
+
+#underlinehome {
+    width: 0;
+    height: 10px;
+    background-color: #37ff8ab7;
+    position: relative;
+    left: 10px;
+}
+
+.icon_box {
+    display: flex;
 }
