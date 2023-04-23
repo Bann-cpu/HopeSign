@@ -35,3 +35,9 @@ window.addEventListener("DOMContentLoaded", () => {
     //?backgroundAlpha: 0.0,
   });
 });
+
+let fiEnv = gsap.to(".icon_envelopper", {
+  x: 165,
+  ease: "steps(12)",
+  duration: 3,
+})
