@@ -107,7 +107,7 @@ li {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #571841;
+    background-color: #23153c;
     height: 105%;
     width: 100%;
     border-left: solid 2px #37FF8B;
@@ -118,10 +118,12 @@ li {
     from {
         left: 0;
     }
-
+        
     to {
         width: 105%;
         left: 100%;
+        background-color: #23153c;
+        background-color: transparent;
     }
 }
 
@@ -156,4 +158,12 @@ li {
 
 .icon_box {
     display: flex;
+}
+
+#vanta-element {
+    position: absolute;
+    height: 100dvh;
+    width: 100%;
+    object-fit: contain;
+    z-index: 0;
 }
