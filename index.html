@@ -11,12 +11,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/MotionPathPlugin.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.trunk.min.js"></script>
 
 </head>
 
-<body>
+<body data-nav="false">
     <div id="vanta-element"></div>
 
     <nav class="navbar container">
@@ -59,7 +59,8 @@
             </svg>
         </a>
     </div>
-
+    <button id="red-btn" type="button" data-color="false" onclick="toggleNav()">TURN TO RED</button>
+    <button id="nav-toggle"  type="button">BOUTTON</button>
     <script src="/script.js"></script>
 </body>
 

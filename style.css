@@ -11,11 +11,10 @@ font-family: 'Comfortaa', cursive;
     margin: 0;
 }
 
+html,
 body {
-    background-color: #571841;
-    height: 100dvh;
-    width: 100dvw;
-    overflow: hidden;
+    height: 100vh;
+    width: 100%;
 }
 
 a {
@@ -103,11 +102,12 @@ li {
     color: #FFFFFF;
     position: relative;
     left: 50px;
-    overflow : hidden; 
+    overflow: hidden;
 }
-.icon_envelopper{
+
+.icon_envelopper {
     position: absolute;
-    top: 0px; 
+    top: 0px;
     left: 0px;
     width: 500px;
     height: 90px;
@@ -149,8 +149,9 @@ li {
 }
 
 #vanta-element {
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 100%;
     z-index: 0;
+    background-color: #23153c;
 }

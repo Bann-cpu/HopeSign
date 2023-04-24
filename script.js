@@ -22,17 +22,18 @@ let underlineHome = gsap.to(
 );
 
 window.addEventListener("DOMContentLoaded", () => {
-  VANTA.NET({
+  VANTA.TRUNK({
     el: "#vanta-element",
     mouseControls: true,
     touchControls: true,
-    gyroControls: false,
+    gyroControls: true,
     minHeight: 200.0,
     minWidth: 200.0,
     scale: 1.0,
     scaleMobile: 1.0,
-    points: 15.0,
-    //?backgroundAlpha: 0.0,
+    backgroundColor: "#23153c",
+    spacing: 1.5,
+    chaos: 4.0,
   });
 });
 
@@ -41,3 +42,8 @@ let fiEnv = gsap.to(".icon_envelopper", {
   ease: "steps(12)",
   duration: 3,
 });
+
+gsap.from("#vanta-element", {
+  opacity: 0,
+  duration: 8,
+})
