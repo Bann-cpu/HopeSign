@@ -13,6 +13,9 @@ font-family: 'Comfortaa', cursive;
 
 body {
     background-color: #571841;
+    height: 100dvh;
+    width: 100dvw;
+    overflow: hidden;
 }
 
 a {
@@ -147,8 +150,7 @@ li {
 
 #vanta-element {
     position: absolute;
-    height: 100dvh;
+    height: 100%;
     width: 100%;
-    object-fit: contain;
     z-index: 0;
 }
