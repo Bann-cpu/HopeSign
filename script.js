@@ -27,11 +27,11 @@ window.addEventListener("DOMContentLoaded", () => {
     mouseControls: true,
     touchControls: true,
     gyroControls: false,
-    minHeight: 200.00,
-    minWidth: 200.00,
-    scale: 1.00,
-    scaleMobile: 1.00,
-    points: 15.00
+    minHeight: 200.0,
+    minWidth: 200.0,
+    scale: 1.0,
+    scaleMobile: 1.0,
+    points: 15.0,
     //?backgroundAlpha: 0.0,
   });
 });
@@ -40,4 +40,4 @@ let fiEnv = gsap.to(".icon_envelopper", {
   x: 165,
   ease: "steps(12)",
   duration: 3,
-})
+});
