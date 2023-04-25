@@ -42,8 +42,3 @@ let fiEnv = gsap.to(".icon_envelopper", {
   ease: "steps(12)",
   duration: 3,
 });
-
-gsap.from("#vanta-element", {
-  opacity: 0,
-  duration: 8,
-})
