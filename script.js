@@ -1,4 +1,4 @@
-let navElements = gsap.from(".button", {
+  let navElements = gsap.from(".button", {
   y: "random(-200, 200)",
   stagger: 0.5,
   opacity: 0,
@@ -42,3 +42,14 @@ let fiEnv = gsap.to(".icon_envelopper", {
   ease: "steps(12)",
   duration: 3,
 });
+
+const cursorStyle = document.querySelector(".cursor");
+const cursorSndStyle = document.querySelector(".cursor2");
+document.addEventListener("mousemove", (e) => {
+  const x = e.clientX;
+  const y = e.clientY;
+  const translateValue = `translate3d(${x}px, ${y}px, 0)`;
+
+  cursorStyle.style.transform = translateValue;
+});
+
