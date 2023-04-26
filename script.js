@@ -21,7 +21,8 @@ let underlineHome = gsap.to(
   ">"
 );
 
-window.addEventListener("DOMContentLoaded", () => {
+//?ANIMATION DU DONUTS BACKGROUND
+window.addEventListener("DOMContentLoaded", () => { 
   VANTA.TRUNK({
     el: "#vanta-element",
     mouseControls: true,
@@ -43,13 +44,32 @@ let fiEnv = gsap.to(".icon_envelopper", {
   duration: 3,
 });
 
-const cursorStyle = document.querySelector(".cursor");
-const cursorSndStyle = document.querySelector(".cursor2");
-document.addEventListener("mousemove", (e) => {
-  const x = e.clientX;
-  const y = e.clientY;
-  const translateValue = `translate3d(${x}px, ${y}px, 0)`;
+//?ANIMATION DU CURSEUR
+const cursorStyle = document.querySelector(".inner-cursor");
+const cursorSndStyle = document.querySelector(".outer-cursor");
+console.log(cursorSndStyle);
 
-  cursorStyle.style.transform = translateValue;
+
+window.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("mousemove", (e) => {
+    const x = e.clientX;
+    const y = e.clientY;
+    
+    cursorStyle.style.left = `${x}px`;
+    cursorStyle.style.top = `${y}px`;
+  
+    cursorSndStyle.style.top = `${y}px`;
+    cursorSndStyle.style.left = `${x}px`;
+  });  
+})
+
+const paraArray = Array.from(document.querySelectorAll("p"));
+paraArray.forEach((element) => {
+  element.addEventListener("mouseenter", () => {
+    cursorStyle.classList.add("grow")
+  });
+  element.addEventListener("mouseleave", () => {
+    cursorStyle.classList.remove("grow")
+  })
 });
 
