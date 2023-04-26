@@ -19,6 +19,11 @@ body {
     cursor: none;
 }
 
+::selection {
+    background-color: white;
+    color: black;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -160,8 +165,8 @@ li {
 }
 
 .inner-cursor {
-    width: 10px;
-    height: 10px;
+    width: 1px;
+    height: 1px;
     transform: translate(-50%, -50%);
     position: fixed;
     border-radius: 50%;
