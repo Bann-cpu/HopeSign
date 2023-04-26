@@ -97,7 +97,7 @@ li {
 }
 
 /* hover */
-.button:hover .hover-text{
+.button:hover .hover-text {
     width: 100%;
     filter: drop-shadow(0 0 23px var(--animation-color));
     cursor: none;
@@ -192,4 +192,11 @@ li {
     height: 70px;
     width: 70px;
     transition: width 0.5s, height 0.5s;
+} 
+
+.top-part {
+    color:rgb(236, 236, 236);
+    background-color: black;
+    width: 500px;
+    height: 500px;
 }

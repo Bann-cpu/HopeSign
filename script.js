@@ -1,4 +1,4 @@
-  let navElements = gsap.from(".button", {
+let navElements = gsap.from(".button", {
   y: "random(-200, 200)",
   stagger: 0.5,
   opacity: 0,
@@ -22,7 +22,7 @@ let underlineHome = gsap.to(
 );
 
 //?ANIMATION DU DONUTS BACKGROUND
-window.addEventListener("DOMContentLoaded", () => { 
+window.addEventListener("DOMContentLoaded", () => {
   VANTA.TRUNK({
     el: "#vanta-element",
     mouseControls: true,
@@ -75,15 +75,15 @@ document.addEventListener("mousemove", (e) => {
   mouseY = e.clientY;
 });
 
-
 const aArray = Array.from(document.querySelectorAll("a"));
 const paraArray = Array.from(document.querySelectorAll("p"));
 
-aArray + paraArray.forEach((element) => {
-  element.addEventListener("mouseenter", () => {
-    cursorStyle.classList.add("grow");
+aArray +
+  paraArray.forEach((element) => {
+    element.addEventListener("mouseenter", () => {
+      cursorStyle.classList.add("grow");
+    });
+    element.addEventListener("mouseleave", () => {
+      cursorStyle.classList.remove("grow");
+    });
   });
-  element.addEventListener("mouseleave", () => {
-    cursorStyle.classList.remove("grow");
-  });
-});
