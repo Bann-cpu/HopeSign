@@ -131,7 +131,7 @@ li {
     font-family: 'Work Sans', sans-serif;
     color: #fff;
     font-weight: 900;
-    display: flex;
+    display: inline-block;
 }
 
 #home_intro>a>svg {
@@ -165,24 +165,26 @@ li {
     transform: translate(-50%, -50%);
     position: fixed;
     border-radius: 50%;
-    border: solid 2px rgb(241, 15, 15);
+    border: solid 4px rgb(236, 236, 236);
+    background-color: rgb(236, 236, 236);
     pointer-events: none;
     transition: width 0.5s, height 0.5s;
-    transition: 50ms ease-out;
+    transition: .3s ease-out;
+    mix-blend-mode: difference;
 }
 
 .outer-cursor {
     position: fixed;
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     transform: translate(-50%, -50%);
-    border: 1px solid rgb(255, 0, 0);
+    border: 1px solid rgb(238, 234, 234);
     border-radius: 50%;
     pointer-events: none;
 }
 
 .inner-cursor.grow {
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     transition: width 0.5s, height 0.5s;
 }
