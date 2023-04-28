@@ -1,3 +1,4 @@
+//?Animation de la nav bar 
 let navElements = gsap.from(".button", {
   y: "random(-200, 200)",
   stagger: 0.5,
@@ -11,6 +12,7 @@ let homeElements = gsap.from("#home_intro p , #home_intro svg", {
   stagger: 0.5,
 });
 
+//?Animation de l'underline
 let underlineHome = gsap.to(
   "#underlinehome",
   {

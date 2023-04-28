@@ -192,11 +192,4 @@ li {
     height: 70px;
     width: 70px;
     transition: width 0.5s, height 0.5s;
-} 
-
-.top-part {
-    color:rgb(236, 236, 236);
-    background-color: black;
-    width: 500px;
-    height: 500px;
 }
