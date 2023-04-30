@@ -17,6 +17,7 @@ body {
     height: 100dvh;
     width: 100dvw;
     cursor: none;
+    overflow-x: hidden;
 }
 
 ::selection {
