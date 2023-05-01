@@ -162,6 +162,7 @@ li {
     position: fixed;
     height: 100%;
     width: 100%;
+    z-index: -5;
 }
 
 .inner-cursor {
@@ -192,4 +193,19 @@ li {
     height: 70px;
     width: 70px;
     transition: width 0.5s, height 0.5s;
+}
+
+.footer_media > div{
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.footer_media{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
