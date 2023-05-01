@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Work+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 /*
-font-family: 'Comfortaa', cursive;
+    font-family: 'Comfortaa', cursive;
     font-family: 'Work Sans', sans-serif;
+    font-family: 'Alfa Slab One', cursive;
 */
 
 * {
@@ -177,6 +178,7 @@ li {
     transition: width 0.5s, height 0.5s;
     transition: .3s ease-out;
     mix-blend-mode: difference;
+    z-index: 4;
 }
 
 .outer-cursor {
@@ -184,9 +186,10 @@ li {
     height: 70px;
     width: 70px;
     transform: translate(-50%, -50%);
-    border: 1px solid rgb(238, 234, 234);
+    border: 1px solid rgb(226, 7, 7);
     border-radius: 50%;
     pointer-events: none;
+    z-index: 4;
 }
 
 .inner-cursor.grow {
@@ -195,17 +198,25 @@ li {
     transition: width 0.5s, height 0.5s;
 }
 
-.footer_media > div{
-    background-color: red;
-    height: 50px;
-    width: 50px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
+/*?FOOTER*/
+
+#footer_ctn{
+    height: fit-content;
+    width: 100dvw;
+    position: relative;
+    top: 2000px;
+    background-color: #36205c;
 }
 
-.footer_media{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+#footer_ctn::before{
+    content: 'FOOTER';
+    width: auto;
+    height: 200px;
+    font-size: 6rem;
+    position: absolute;
+    font-family: 'Alfa Slab One', cursive;
+    color: #FFFFFF;
+    letter-spacing: 1rem;
+    top: -80px;
+    left: 1rem;
 }
