@@ -30,7 +30,6 @@ body {
 a {
     text-decoration: none;
     color: white;
-    opacity: 0.7;
 }
 
 li {
@@ -219,4 +218,33 @@ li {
     letter-spacing: 1rem;
     top: -80px;
     left: 1rem;
+}
+
+.spec_footer{
+    display: flex;
+    width: 350px;
+    gap: 30%;
+    text-align: center;
+    position: relative;
+    left: 35%;
+    top: -25px; 
+    border: solid 1px black;
+}
+
+.footer_list {
+    display: inline-block;
+    color: #FFFFFF;     
+    font-family: 'Work Sans', sans-serif;
+}
+
+ul > h3 {
+    font-size: 1.7rem;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+ul > li {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: 700;
 }
