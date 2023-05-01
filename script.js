@@ -1,4 +1,4 @@
-//?Animation de la nav bar 
+//?Animation de la nav bar
 let navElements = gsap.from(".button", {
   y: "random(-200, 200)",
   stagger: 0.5,

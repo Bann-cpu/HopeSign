@@ -11,6 +11,7 @@
     padding: 0;
     margin: 0;
     cursor: none;
+    scroll-behavior: smooth;
 }
 
 html,
@@ -20,6 +21,24 @@ body {
     cursor: none;
     overflow-x: hidden;
     background-color: #23153c;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #160d25;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #6a42af;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
 }
 
 ::selection {
@@ -197,17 +216,17 @@ li {
     transition: width 0.5s, height 0.5s;
 }
 
-/*?FOOTER*/
+/*!FOOTER*/
 
-#footer_ctn{
-    height: fit-content;
+#footer_ctn {
+    height: 200px;
     width: 100dvw;
     position: relative;
     top: 2000px;
     background-color: #36205c;
 }
 
-#footer_ctn::before{
+#footer_ctn::before {
     content: 'FOOTER';
     width: auto;
     height: 200px;
@@ -220,31 +239,95 @@ li {
     left: 1rem;
 }
 
-.spec_footer{
+/*? Specificites list*/
+
+.spec_footer {
     display: flex;
-    width: 350px;
+    width: 400px;
     gap: 30%;
     text-align: center;
-    position: relative;
-    left: 35%;
-    top: -25px; 
-    border: solid 1px black;
+    justify-content: space-around;
+    position: absolute;
+    left: 36%;
+    top: 20px;
 }
 
 .footer_list {
     display: inline-block;
-    color: #FFFFFF;     
+    color: #FFFFFF;
     font-family: 'Work Sans', sans-serif;
 }
 
-ul > h3 {
+ul>h3 {
     font-size: 1.7rem;
     font-weight: bolder;
     margin-bottom: 20px;
 }
 
-ul > li {
+ul>li {
     margin-bottom: 5px;
     font-size: 1rem;
     font-weight: 700;
+}
+
+/*? Crédit */
+.creator_credit {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 15px;
+    color: #FFFFFF;
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+}
+
+/*? Icons of the footer*/
+
+.footer_media {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 5rem;
+    left: 13rem;
+    font-size: 1.5rem;
+    gap: 35px;
+}
+
+/*? Mail subscription*/
+
+.footer_mail {
+    position: absolute;
+    height: auto;
+    width: 300px;
+    display: inline-block;
+    left:  68%;
+    top: 22px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.footer_mail * {
+    margin-bottom: 5px;
+}
+
+.footer_mail>button>a {
+    display: flex;
+    padding: 1.5rem 6rem;
+    color: #000;
+}
+
+.footer_mail > #input_mail {
+    padding: 0.8rem 1.85rem;
+}
+
+#input_mail::placeholder {
+    text-indent: 38%;
+    color: #000
+}
+
+.footer_mail h3 {
+    font-weight: 15px;
+    color: #FFFFFF;
+    font-weight: 500;
 }
