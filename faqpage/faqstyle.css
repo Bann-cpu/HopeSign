@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+/*
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Work Sans', sans-serif;
+    font-family: 'Alfa Slab One', cursive;
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    cursor: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --BackgroundColor: "'Work Sans', sans-serif;";
+}
+
+html,
+body {
+    height: 100dvh;
+    width: 100dvw;
+    cursor: none;
+    overflow-x: hidden;
+    background-color: #23153c;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #160d25;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #6a42af;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+}
+
+::selection {
+    background-color: white;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+.navbar {
+    height: 100px;
+    width: 100dvw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content_container {
+    width: 500px;
+    height: 50px;
+    position: relative;
+    left: -10px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Comfortaa', cursive;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+}
+
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+}
+
+/* button styling */
+.button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255, 255, 255, 0.6);
+    --animation-color: #37FF8B;
+    --fs-size: 1em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: 'Comfortaa', cursive;
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+/* this is the text, when you hover on button */
+.hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+}
+
+/* hover */
+.button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color));
+    cursor: none;
+}
+
+
+#icon_name {
+    font-family: 'Comfortaa', cursive;
+    font-size: 32px;
+    color: #FFFFFF;
+    position: relative;
+    left: 50px;
+    overflow: hidden;
+}
+
+.icon_envelopper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 500px;
+    height: 90px;
+    background-color: #23153c;
+    border-left: solid 2px #37FF8B;
+}

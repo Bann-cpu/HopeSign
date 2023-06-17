@@ -13,7 +13,7 @@
     <script src="https://kit.fontawesome.com/34b72c1614.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.trunk.min.js"></script>
-
+    <script type="module" src='https://unpkg.com/html-include-element'></script>
 </head>
 
 <body data-nav="false">
@@ -37,8 +37,8 @@
             </button>
 
             <button data-text="Awesome" class="button">
-                <a href="#"><span class="actual-text">&nbsp;&nbsp;FAQ&nbsp;</span></a>
-                <a href="#"><span class="hover-text" aria-hidden="true">&nbsp;&nbsp;FAQ&nbsp;</span></a>
+                <a><span class="actual-text">&nbsp;&nbsp;FAQ&nbsp;</span></a>
+                <a target="_blank"  href="./faqpage/faqpage.html"><span class="hover-text" aria-hidden="true">&nbsp;&nbsp;FAQ&nbsp;</span></a>
             </button>
         </div>
     </nav>
@@ -62,13 +62,6 @@
     <div class="inner-cursor"></div>
     <div class="outer-cursor"></div>
 
-    <svg viewBox="0 0 50 250" id="path_scroller">
-        <path d="M 30 10 
-                C 40 50, 10 70, 20 120
-                C 25 150, 45 170, 30 210" 
-            stroke="white" stroke-width="0.2" fill="none" />
-    </svg>
-    
     <footer id="footer_ctn">
 
         <ul class="footer_media">
@@ -93,7 +86,7 @@
                 <li><a target="_blank" href="#">Home</a></li>
                 <li><a target="_blank" href="#">Contact</a></li>
                 <li><a target="_blank" href="#">About me</a></li>
-                <li><a target="_blank" href="#">Faq</a></li>
+                <li><a target="_blank" href="./faqpage/faqpage.html">Faq</a></li>
             </ul>
 
             <ul class="footer_list">
@@ -115,12 +108,12 @@
                 <label for="name" class="form__label">Email</label>
             </div>
 
-            <button class="footer_btn"><a href="#">SEND</a></button>
+            <button class="footer_btn"><a href="#">Subscribe</a></button>
         </div>
-
 
     </footer>
 
+    
     <script src="/script.js"></script>
 </body>
 
