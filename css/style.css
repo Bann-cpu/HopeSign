@@ -34,7 +34,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: #160d25;
+    background: transparent;
     /* color of the tracking area */
 }
 
@@ -181,12 +181,6 @@ li {
     display: flex;
 }
 
-#vanta-element {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    z-index: -5;
-}
 
 .inner-cursor {
     width: 1px;
@@ -469,4 +463,29 @@ ul>li {
     display: flex;
     padding: 0.5rem 4rem;
     color: #fff;
+}
+
+.proposal-container {
+    position: relative;
+    top: 50rem;
+    left: 5%;
+    height: 400px;
+    width: 90dvw;
+    background-color: rgba(0, 128, 0, 0.452);
+    border-radius: 100px;
+}
+
+.proposal_first {
+    position: absolute;
+    top: 50px;
+    left: 32%;
+    height: 300px;
+    width: 600px;
+    background-color: rgb(131, 15, 15);
+}
+
+.proposal_first>h1{
+    position: absolute;
+    top: 10px;
+    left: 11rem;
 }
