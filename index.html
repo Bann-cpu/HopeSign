@@ -25,8 +25,8 @@
         <div class="content_container">
 
             <button data-text="Awesome" class="button">
-                <a href="#"><span class="actual-text">&nbsp;&nbsp;About&nbsp;ME&nbsp;</span></a>
-                <a href="#"><span class="hover-text" aria-hidden="true">&nbsp;&nbsp;About&nbsp;ME&nbsp;</span></a>
+                <a href="#"><span class="actual-text">&nbsp;&nbsp;About&nbsp;US&nbsp;</span></a>
+                <a href="#"><span class="hover-text" aria-hidden="true">&nbsp;&nbsp;About&nbsp;US&nbsp;</span></a>
             </button>
 
             <button data-text="Awesome" class="button">
@@ -36,7 +36,8 @@
 
             <button data-text="Awesome" class="button">
                 <a><span class="actual-text">&nbsp;&nbsp;FAQ&nbsp;</span></a>
-                <a target="_blank"  href="./faqpage/faqpage.html"><span class="hover-text" aria-hidden="true">&nbsp;&nbsp;FAQ&nbsp;</span></a>
+                <a target="_blank" href="./faqpage/faqpage.html"><span class="hover-text"
+                        aria-hidden="true">&nbsp;&nbsp;FAQ&nbsp;</span></a>
             </button>
         </div>
     </nav>
@@ -58,10 +59,49 @@
     </main>
 
     <div class="proposal-container">
-        <div class="proposal_first">
-            <h1>What do we offer</h1>
-            <button><a href="#" target="_blank">START</a></button>
+        <h1>WHAT DO WE PROPOSE</h1>
+        <div class="proposal_card">
+            <button><a href="./html-pages/faq-page.html" target="_blank">START</a></button>
+
+            <svg class="svg_triangle" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                <g transform="rotate(90 25 25)">
+                    <polygon class="change-fill" points="25,5 45,45 5,45" fill="none" stroke="white"/>
+                </g>
+            </svg>
+            
+            
+            <div class="itemContainer">
+
+                <div class="itemCarrousselOne">
+                    <p>#1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus exercitationem recusandae ab? Adipisci ad corporis voluptates est amet praesentium magni incidunt perspiciatis alias suscipit quas quo id aperiam, officiis enim?<p>
+                    </div>
+
+                <div class="itemCarrousselTwo">
+                    <p>#2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus exercitationem recusandae ab? Adipisci ad corporis voluptates est amet praesentium magni incidunt perspiciatis alias suscipit quas quo id aperiam, officiis enim?<p>
+                </div>
+
+                <div class="itemCarrousselThree">
+                    <p>#3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus exercitationem recusandae ab? Adipisci ad corporis voluptates est amet praesentium magni incidunt perspiciatis alias suscipit quas quo id aperiam, officiis enim?<p>
+                </div>
+
+            </div>
         </div>
+
+        <svg class="svg_circle_animation" version="1.1" id="L3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75px" height="75px"
+        viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
+        <circle fill="none" stroke="black" stroke-width="4" cx="50" cy="50" r="44" style="opacity:0.5;"/>
+        <circle fill="#fff" stroke="#fff" stroke-width="3" cx="8" cy="54" r="6" >
+          <animateTransform
+            attributeName="transform"
+            dur="2s"
+            type="rotate"
+            from="0 50 48"
+            to="360 50 52"
+            repeatCount="indefinite" />
+          
+        </circle>
+      </svg>
+
     </div>
 
 
@@ -119,7 +159,7 @@
 
     </footer>
 
-    <script src="./javascript-pages/home-page.js"></script>
+    <script src="./javascript-pages/home-page.js" async></script>
 </body>
 
 </html>
