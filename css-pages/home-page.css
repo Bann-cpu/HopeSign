@@ -474,17 +474,23 @@ ul>li {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 
-    0 2px 4px rgba(0, 0, 0, 0.1),   /* Ombre inférieure */
-    0 4px 8px rgba(0, 0, 0, 0.1),   /* Ombre inférieure plus foncée */
-    0 8px 16px rgba(0, 0, 0, 0.1),  /* Ombre inférieure plus foncée */
-    0 -2px 4px rgba(255, 255, 255, 0.1),   /* Ombre supérieure */
-    0 -4px 8px rgba(255, 255, 255, 0.1),   /* Ombre supérieure plus claire */
-    0 -8px 16px rgba(255, 255, 255, 0.1);  /* Ombre supérieure plus claire */
+    box-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.1),
+        /* Ombre inférieure */
+        0 4px 8px rgba(0, 0, 0, 0.1),
+        /* Ombre inférieure plus foncée */
+        0 8px 16px rgba(0, 0, 0, 0.1),
+        /* Ombre inférieure plus foncée */
+        0 -2px 4px rgba(255, 255, 255, 0.1),
+        /* Ombre supérieure */
+        0 -4px 8px rgba(255, 255, 255, 0.1),
+        /* Ombre supérieure plus claire */
+        0 -8px 16px rgba(255, 255, 255, 0.1);
+    /* Ombre supérieure plus claire */
 }
 
 .proposal_card {
-    position: absolute; 
+    position: absolute;
     height: 300px;
     width: 90%;
     display: flex;
@@ -492,7 +498,7 @@ ul>li {
     justify-content: center;
 }
 
-.proposal-container>h1{
+.proposal-container>h1 {
     position: absolute;
     top: 10px;
     text-transform: uppercase;
@@ -501,37 +507,31 @@ ul>li {
     font-family: 'Work Sans', cursive;
 }
 
-.proposal_card>button{
+.proposal_card>button {
     background-color: transparent;
     border-radius: 90px;
     padding: 15px 50px;
     border: solid #fff 2px;
-    position: absolute; 
+    position: absolute;
     left: 80%;
     top: 40%;
 }
-.proposal_card>button>a{
+
+.proposal_card>button>a {
     color: #ffff;
     font-family: 'Work Sans', sans-serif;
     font-size: 18px;
     font-weight: bolder;
 }
 
-.proposal-container>.proposal_card>.svg_triangle{
+.proposal-container>.proposal_card>.svg_triangle {
     position: absolute;
     left: 0px;
     top: 42%;
-    transition: fill 5s ease;
 }
 
-  /* Définissez le style du SVG lors du hover */
-  .svg_triangle .change-fill:hover {
-    fill: white; /* Modifiez la couleur fill lors du hover */
-  }
-  
-
 .itemContainer {
-    height: 65px;;
+    height: 61px;
     width: 60%;
     position: absolute;
     left: 5.5rem;

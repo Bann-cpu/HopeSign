@@ -72,3 +72,26 @@ aArray +
     ease: "steps(12)",
     duration: 3,
   });
+
+  /*! Carousel Animation with addEventListeners*/
+
+const carouselItems = document.querySelectorAll("carouselItem");
+const carouselContainer = document.querySelector("itemContainer");
+const btnCard = document.getElementById("btnCard");
+
+let index = 0;
+
+function carouselStarting() {
+  index++;
+
+  if (index > carouselItems.length -1) {
+    index = 0;
+  }
+
+  carouselItems.style.transform = `translateY(${-index * 100}px)`
+}
+
+btnCard.addEventListener("click", () => {
+  carouselStarting();
+  console.log("Le bouton fonctionne bien");
+})
