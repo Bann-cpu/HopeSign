@@ -1,17 +1,15 @@
 let navElements = gsap.from(".button", {
-    y: "random(-200, 200)",
-    stagger: 0.5,
-    opacity: 0,
-    duration: 1,
-  });
-  let homeElements = gsap.from("#home_intro p , #home_intro svg", {
-    y: -100,
-    duration: 0.5,
-    opacity: 0,
-    stagger: 0.5,
-  });
-  
-
+  y: "random(-200, 200)",
+  stagger: 0.5,
+  opacity: 0,
+  duration: 1,
+});
+let homeElements = gsap.from("#home_intro p , #home_intro svg", {
+  y: -100,
+  duration: 0.5,
+  opacity: 0,
+  stagger: 0.5,
+});
 
 const cursorStyle = document.querySelector(".inner-cursor");
 const cursorSndStyle = document.querySelector(".outer-cursor");
@@ -56,42 +54,39 @@ aArray +
     });
   });
 
+let underlineHome = gsap.to(
+  "#underlinehome",
+  {
+    width: 645,
+    ease: "power1.out",
+    duration: 0.5,
+  },
+  ">"
+);
 
-  let underlineHome = gsap.to(
-    "#underlinehome",
-    {
-      width: 645,
-      ease: "power1.out",
-      duration: 0.5,
-    },
-    ">"
-  );
-  
-  let fiEnv = gsap.to(".icon_envelopper", {
-    x: 165,
-    ease: "steps(12)",
-    duration: 3,
-  });
+let fiEnv = gsap.to(".icon_envelopper", {
+  x: 165,
+  ease: "steps(12)",
+  duration: 3,
+});
 
-  /*! Carousel Animation with addEventListeners*/
+/*! Carousel Animation with addEventListeners*/
 
-const carouselItems = document.querySelectorAll("carouselItem");
-const carouselContainer = document.querySelector("itemContainer");
-const btnCard = document.getElementById("btnCard");
+document.addEventListener("DOMContentLoaded", function () {
+  const carouselItems = document.querySelectorAll(".carouselItem");
+  let actualIndex = 0;
 
-let index = 0;
-
-function carouselStarting() {
-  index++;
-
-  if (index > carouselItems.length -1) {
-    index = 0;
+  if (carouselItems[actualIndex]) {
+    carouselItems[actualIndex].style.display = "block";
   }
 
-  carouselItems.style.transform = `translateY(${-index * 100}px)`
-}
+  function showNextItem() {
+    if (carouselItems[actualIndex]) {
+      carouselItems[actualIndex].style.display = "none";
+      actualIndex = (actualIndex + 1) % carouselItems.length;
+      carouselItems[actualIndex].style.display = "block";
+    }
+  }
 
-btnCard.addEventListener("click", () => {
-  carouselStarting();
-  console.log("Le bouton fonctionne bien");
-})
+  setInterval(showNextItem, 3000);
+});
