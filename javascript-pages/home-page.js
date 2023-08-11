@@ -72,21 +72,12 @@ let fiEnv = gsap.to(".icon_envelopper", {
 
 /*! Carousel Animation with addEventListeners*/
 
-document.addEventListener("DOMContentLoaded", function () {
-  const carouselItems = document.querySelectorAll(".carouselItem");
-  let actualIndex = 0;
+const carouselOptions = {
+  freeScroll: false,
+  wrapAround: true,
+  autoPlay: true,
+  pageDots: true,
+  prevNextButtons: false,
+}
 
-  if (carouselItems[actualIndex]) {
-    carouselItems[actualIndex].style.display = "block";
-  }
-
-  function showNextItem() {
-    if (carouselItems[actualIndex]) {
-      carouselItems[actualIndex].style.display = "none";
-      actualIndex = (actualIndex + 1) % carouselItems.length;
-      carouselItems[actualIndex].style.display = "block";
-    }
-  }
-
-  setInterval(showNextItem, 3000);
-});
+var flkty = new Flickity(".carousel")

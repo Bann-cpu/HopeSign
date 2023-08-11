@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "flickity": "^3.0.0",
     "gsap": "^3.11.5",
     "html-include-element": "^0.3.0"
   }
