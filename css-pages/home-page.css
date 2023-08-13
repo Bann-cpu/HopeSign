@@ -530,17 +530,6 @@ ul>li {
     top: 42%;
 }
 
-.carousel {
-    height: 61px;
-    width: 60%;
-    position: absolute;
-    left: 5.5rem;
-    overflow: hidden;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: #fff;
-}
 
 .svg_circle_animation {
     position: absolute;
@@ -548,20 +537,6 @@ ul>li {
     bottom: 25px;
 }
 
-
-.flickity-button {
-    background: transparent;
-  }
-  /* big previous & next buttons */
-  .flickity-prev-next-button {
-    width: 100px;
-    height: 100px;
-  }
-  /* icon color */
-  .flickity-button-icon {
-    fill: white;
-  }
-  /* hide disabled button */
-  .flickity-button:disabled {
-    display: none;
-  }
+/*
+Carousel configuration
+*/

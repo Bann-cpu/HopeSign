@@ -72,12 +72,12 @@ let fiEnv = gsap.to(".icon_envelopper", {
 
 /*! Carousel Animation with addEventListeners*/
 
-const carouselOptions = {
-  freeScroll: false,
+var carousselElement = document.querySelector(".main-carousel");
+var flickityCarousel = new Flickity(carousselElement, {
+  draggable: false, 
   wrapAround: true,
+  groupCells: false, 
   autoPlay: true,
-  pageDots: true,
-  prevNextButtons: false,
-}
-
-var flkty = new Flickity(".carousel")
+  pauseAutoPlayOnHover: true,
+  pageDots: true, 
+});
