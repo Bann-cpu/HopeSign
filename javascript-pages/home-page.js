@@ -77,15 +77,9 @@ var flickityCarousel = new Flickity(carousselElement, {
   draggable: false, 
   wrapAround: true,
   groupCells: false, 
-  autoPlay: true,
+  autoPlay: 2500,
   pauseAutoPlayOnHover: true,
   pageDots: true, 
   percentPosition: true,
-
-  arrowShape: { 
-    x0: 10,
-    x1: 60, y1: 50,
-    x2: 70, y2: 40,
-    x3: 30
-  }
+  prevNextButtons: false
 });

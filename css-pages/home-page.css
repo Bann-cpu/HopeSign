@@ -504,7 +504,7 @@ ul>li {
     text-transform: uppercase;
     font-size: 40px;
     color: #FFFFFF;
-    font-family: 'Work Sans', cursive;
+    font-family: 'Comfortaa', cursive;
 }
 
 .proposal_card>button {
@@ -541,7 +541,32 @@ ul>li {
 
 .main-carousel {
     width: 50%;
-    height: 70%;
+    height: 40%;
     position: relative;
     left: -70px;
 }
+
+.carousel-cell {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    color: #ffff;
+}
+
+.flickity-page-dots {
+    bottom: 0px;
+}
+
+/* white circles */
+.flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: transparent;
+    border: 2px solid white;
+}
+
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+    background: white;
+}
+
