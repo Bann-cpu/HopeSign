@@ -537,6 +537,11 @@ ul>li {
     bottom: 25px;
 }
 
-/*
-Carousel configuration
-*/
+/*!Carousel configuration*/
+
+.main-carousel {
+    width: 50%;
+    height: 70%;
+    position: relative;
+    left: -70px;
+}
