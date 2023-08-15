@@ -77,7 +77,7 @@ var flickityCarousel = new Flickity(carousselElement, {
   draggable: false, 
   wrapAround: true,
   groupCells: false, 
-  autoPlay: 2500,
+  autoPlay: 5000,
   pauseAutoPlayOnHover: true,
   pageDots: true, 
   percentPosition: true,
