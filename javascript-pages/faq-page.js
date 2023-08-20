@@ -53,3 +53,21 @@ aArray +
       cursorStyle.classList.remove("grow");
     });
   });
+
+//! Card showing animation
+
+document.addEventListener("DOMContentLoaded", function() {
+  const triggerEvent = document.querySelector(".triggerFaq")
+  const listContent = document.querySelector(".ulListContainer")
+  const cardContainer = document.querySelector(".questionsCardContainer")
+
+  cardContainer.forEach((cardContainer) => {
+    triggerEvent.addEventListener("click", (e) => {
+      e.preventDefault()
+      listContent.classList.toggle("showCardClass")
+    })
+  })
+
+
+
+})
