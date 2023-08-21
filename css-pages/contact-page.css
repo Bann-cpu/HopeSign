@@ -570,6 +570,7 @@ ul>li {
     color: #fff;
     border: none;
     font-weight: 800;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .networksContainer {

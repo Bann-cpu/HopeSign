@@ -72,14 +72,16 @@ let fiEnv = gsap.to(".icon_envelopper", {
 
 /*! Carousel Animation with addEventListeners*/
 
-var carousselElement = document.querySelector(".main-carousel");
-var flickityCarousel = new Flickity(carousselElement, {
-  draggable: false, 
-  wrapAround: true,
-  groupCells: false, 
-  autoPlay: 5000,
-  pauseAutoPlayOnHover: true,
-  pageDots: true, 
-  percentPosition: true,
-  prevNextButtons: false
+window.addEventListener("DOMContentLoaded", () => {
+  var carousselElement = document.querySelector(".main-carousel");
+  var flickityCarousel = new Flickity(carousselElement, {
+    draggable: false,
+    wrapAround: true,
+    groupCells: false,
+    autoPlay: 5000,
+    pauseAutoPlayOnHover: true,
+    pageDots: true,
+    percentPosition: true,
+    prevNextButtons: false
+  });
 });
