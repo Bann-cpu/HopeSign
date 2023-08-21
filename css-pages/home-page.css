@@ -216,7 +216,7 @@ li {
     height: 200px;
     width: 100dvw;
     position: relative;
-    top: 2000px;
+    top: 100%;
     background-color: #36205c;
 }
 
@@ -464,7 +464,7 @@ ul>li {
 /*! Proposal Element - Introduction of service*/
 .proposal-container {
     position: relative;
-    top: 50rem;
+    top: 50%;
     height: 400px;
     width: 80dvw;
     left: 12rem;

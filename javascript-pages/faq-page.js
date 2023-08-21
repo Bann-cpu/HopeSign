@@ -56,18 +56,14 @@ aArray +
 
 //! Card showing animation
 
-document.addEventListener("DOMContentLoaded", function() {
-  const triggerEvent = document.querySelector(".triggerFaq")
-  const listContent = document.querySelector(".ulListContainer")
-  const cardContainer = document.querySelector(".questionsCardContainer")
+document.addEventListener("DOMContentLoaded", function () {
+  const triggers = document.querySelectorAll(".triggerFaq");
 
-  cardContainer.forEach((cardContainer) => {
-    triggerEvent.addEventListener("click", (e) => {
-      e.preventDefault()
-      listContent.classList.toggle("showCardClass")
-    })
-  })
-
-
-
-})
+  triggers.forEach((trigger) => {
+    trigger.addEventListener("click", function (e) {
+      e.preventDefault();
+      const listContent = this.nextElementSibling; // Obtenez le frère suivant de l'élément cliqué
+      listContent.classList.toggle("showCardClass");
+    });
+  });
+});
