@@ -1,19 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Work+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
-*{
+/*
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Work Sans', sans-serif;
+    font-family: 'Alfa Slab One', cursive;
+*/
+
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     cursor: none;
+    scroll-behavior: smooth;
 }
 
-html, 
-body{
+html,
+body {
     height: 100dvh;
     width: 100dvw;
     cursor: none;
-    background-color: #23153c;
     overflow-x: hidden;
+    background-color: #23153c;
+    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -157,19 +165,6 @@ li {
     top: 95%;
 }
 
-#underlinehome {
-    width: 0;
-    height: 10px;
-    background-color: #37ff8ab7;
-    position: relative;
-    left: 10px;
-}
-
-.icon_box {
-    display: flex;
-}
-
-/*! Cursor animation*/
 
 .inner-cursor {
     width: 1px;
@@ -203,14 +198,12 @@ li {
     transition: width 0.5s, height 0.5s;
 }
 
-/*!FOOTER*/
-
 
 #footer_ctn {
     height: 200px;
     width: 100dvw;
     position: relative;
-    top: 60%;
+    top: 100%;
     background-color: #36205c;
 }
 
@@ -453,51 +446,4 @@ ul>li {
     display: flex;
     padding: 0.5rem 4rem;
     color: #fff;
-}
-
-/*! Questions card*/
-
-.ulListContainer {
-    height: auto;
-    width: auto;
-    display: none;
-    color: #ffff;
-}
-
-.cardElementContainer > li {
-    display: inline;
-    font-size: 13px;
-    font-family: "Work-Sans", sans-serif;
-}  
-
-#faqTitle {
-    font-family: 'Comfortaa', cursive;
-    font-size: 64px;
-    font-weight: bolder;
-    color: #ffff;
-    text-transform: uppercase;
-    margin: 50px 30px;
-}
-
-.cardElementContainer{
-    margin: 30px 0px;
-    position: relative;
-    top: 80px;
-    background-color: #37215d;
-    padding: 15px;
-    width: 1340px;
-}
-
-.triggerFaq {
-    font-size: 50px;
-    font-family: "Work-Sans", sans-serif;
-    text-transform: uppercase;
-    font-weight: bolder;
-}
-
-/*? show class*/
-
-.showCardClass {
-    display: block;
-    padding: 10px 0px;
 }
