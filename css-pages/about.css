@@ -198,12 +198,13 @@ li {
     transition: width 0.5s, height 0.5s;
 }
 
+/**! FOOTER**/
 
 #footer_ctn {
     height: 200px;
     width: 100dvw;
     position: relative;
-    top: 100%;
+    top: 200%;
     background-color: #36205c;
 }
 
@@ -447,3 +448,26 @@ ul>li {
     padding: 0.5rem 4rem;
     color: #fff;
 }
+
+/*! Main container*/
+
+.titleClass > h1{
+    text-transform: uppercase;
+    font-family: 'Work-Sans', sans-serif;
+    font-size: 110px;
+    color: #ffff;
+    position: relative; 
+    top: 14rem;
+    left: 200px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.mainContainer {
+    background-color: rgba(255, 255, 0, 0.232);
+    height: auto;
+    width: 100%;
+    position: relative;
+    top: 600px;
+}
+
