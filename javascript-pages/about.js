@@ -54,5 +54,17 @@ aArray +
     });
   });
 
-/*SVG animation */
+  gsap.registerPlugin(MotionPathPlugin);
 
+const animationSvg = gsap.to(".arrowSpellOne", {
+    duration: 4,
+    yoyo: true,
+    repeat: Infinity, 
+    repeatDelay: 1,  
+    motionPath: {
+      path: "#svgPath",
+      align: "#svgPath",
+      autoRotate: true,
+      alignOrigin: [0.5, 0.5],
+    },
+  });
