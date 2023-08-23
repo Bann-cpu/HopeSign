@@ -478,7 +478,7 @@ ul>li {
     height: 10px;
     background-color: #ffff;
     position: relative;
-    left: 10px;
+    left: 0px;
     top: 40rem;
 }
 
@@ -490,9 +490,7 @@ ul>li {
     top: 40rem;
 }
 
-/*? Box*/
-
-.containerOfAboutSection {
+.containerOfAboutSectionOne {
     height: auto;
     width: 30em;
     position: relative;
@@ -524,4 +522,62 @@ ul>li {
     border-radius: 20px;
     position: relative;
     left: 600px;
+}
+
+/*? Second part*/
+
+.lineSvgAnimationTwo {
+    width: 0;
+    height: 10px;
+    background-color: #ffff;
+    position: relative;
+    right: -50rem;
+    top: 60rem; 
+    left: 80px;
+    border-right: solid 5px black;
+    border-left: solid 5px red;
+    transform: scaleX(-1);
+}
+
+.triggerSvgAnimationTwo {
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    position: relative; 
+    top: 60rem;
+    left: 95%;
+}
+
+.containerOfAboutSectionTwo {
+    height: 10px;
+    width: 30em;
+    color: #ffff;
+    font-family: "Work-Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bolder;
+    position: relative;
+    top: 4rem;
+    left: -500px; /*! Location */
+}
+
+.questionBoxTwo {
+    height: auto;
+    width: 30em;
+    margin-bottom: 20px;
+    background-color: #D9D9D930;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+    position: relative;
+    top: 50rem;
+}
+
+.informationBoxTwo {
+    width: 30em;
+    background-color: #D9D9D930;
+    text-align: left;
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    top: 50rem;
 }

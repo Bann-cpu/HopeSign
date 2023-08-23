@@ -59,21 +59,21 @@ gsap.registerPlugin(MotionPathPlugin);
 const animationSvg = gsap.to(
   ".lineSvgAnimation",
   {
-    width: 800,
+    width: 700,
     ease: "power1.out",
-    duration: 1,
+    duration: 5,
   },
 );
 
 const animationBoxSections = gsap.to(
-  ".containerOfAboutSection", 
+  ".containerOfAboutSectionOne", 
   {
-    x: -650,
+    x: -800,
     ease: "power1.out",
-    duration: 1,
+    duration: 5,
 })
 
-ScrollTrigger.create({
+ScrollTrigger.create({ /* Ligne animation */
   trigger: ".triggerSvgAnimation",
   start: "top center", // Point de départ de l'animation
   end: "center center", // Point où l'animation se déclenche
@@ -81,9 +81,39 @@ ScrollTrigger.create({
   scrub: true,
 })
 
-ScrollTrigger.create({
+ScrollTrigger.create({ /* Boîte */
   trigger: ".triggerSvgAnimation",
   animation: animationBoxSections,
+  start: "top center", // Point de départ de l'animation
+  end: "center center",
+  scrub: true,
+})
+
+/* */
+
+const animationSvgLineTwo = gsap.to(".lineSvgAnimationTwo", {
+  width: 100,
+  ease: "power1",
+  duration: 5,
+})
+
+const animationBoxSectionTwo = gsap.to(".containerOfAboutSectionTwo", {
+  x: 550, 
+  ease: "power1.out",
+  duration: 5,
+})
+
+ScrollTrigger.create({ /* Ligne animation */
+  trigger: ".triggerSvgAnimationTwo",
+  start: "top center", // Point de départ de l'animation
+  end: "center center", // Point où l'animation se déclenche
+  animation: animationSvgLineTwo, // L'animation GSAP que vous avez créée
+  scrub: true,
+})
+
+ScrollTrigger.create({ /* Boîte */
+  trigger: ".triggerSvgAnimationTwo",
+  animation: animationBoxSectionTwo,
   start: "top center", // Point de départ de l'animation
   end: "center center",
   scrub: true,
