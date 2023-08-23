@@ -54,17 +54,37 @@ aArray +
     });
   });
 
-  gsap.registerPlugin(MotionPathPlugin);
+gsap.registerPlugin(MotionPathPlugin);
 
-const animationSvg = gsap.to(".arrowSpellOne", {
-    duration: 4,
-    yoyo: true,
-    repeat: Infinity, 
-    repeatDelay: 1,  
-    motionPath: {
-      path: "#svgPath",
-      align: "#svgPath",
-      autoRotate: true,
-      alignOrigin: [0.5, 0.5],
-    },
-  });
+const animationSvg = gsap.to(
+  ".lineSvgAnimation",
+  {
+    width: 800,
+    ease: "power1.out",
+    duration: 1,
+  },
+);
+
+const animationBoxSections = gsap.to(
+  ".containerOfAboutSection", 
+  {
+    x: -650,
+    ease: "power1.out",
+    duration: 1,
+})
+
+ScrollTrigger.create({
+  trigger: ".triggerSvgAnimation",
+  start: "top center", // Point de départ de l'animation
+  end: "center center", // Point où l'animation se déclenche
+  animation: animationSvg, // L'animation GSAP que vous avez créée
+  scrub: true,
+})
+
+ScrollTrigger.create({
+  trigger: ".triggerSvgAnimation",
+  animation: animationBoxSections,
+  start: "top center", // Point de départ de l'animation
+  end: "center center",
+  scrub: true,
+})

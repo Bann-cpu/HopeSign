@@ -451,12 +451,12 @@ ul>li {
 
 /*! Main container*/
 
-.titleClass > h1{
+.titleClass>h1 {
     text-transform: uppercase;
     font-family: 'Work-Sans', sans-serif;
     font-size: 110px;
     color: #ffff;
-    position: relative; 
+    position: relative;
     top: 14rem;
     left: 200px;
     font-weight: bolder;
@@ -473,25 +473,55 @@ ul>li {
 
 /*? Organising the arrow and his path*/
 
-.svgPath {
+.lineSvgAnimation {
+    width: 0px;
+    height: 10px;
+    background-color: #ffff;
+    position: relative;
+    left: 10px;
+    top: 40rem;
+}
+
+.triggerSvgAnimation {
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
     position: relative; 
-    bottom: 90em;
-    left: -5em;
+    top: 40rem;
 }
 
-.arrowSpellOne{
-    position: relative; 
-    bottom: 30em;
-    left: -42em;
+/*? Box*/
+
+.containerOfAboutSection {
+    height: auto;
+    width: 30em;
+    position: relative;
+    top: 35rem;
+    left: 65rem;
+    color: #ffff;
+    font-family: "Work-Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bolder;
 }
 
-.carreSVG{
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 100px solid red; /* Vous pouvez personnaliser la couleur */
+.questionBox {
+    height: auto;
+    width: 30em;
+    margin-bottom: 20px;
+    background-color: #D9D9D930;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+    position: relative;
+    left: 600px;
 }
 
-    background-color: red;
+.informationBox {
+    width: 30em;
+    background-color: #D9D9D930;
+    text-align: left;
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    left: 600px;
 }
