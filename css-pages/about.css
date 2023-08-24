@@ -527,37 +527,36 @@ ul>li {
 /*? Second part*/
 
 .lineSvgAnimationTwo {
-    width: 0;
+    flex: 1; /* Utilisez flex pour ajuster la largeur de l'élément */
     height: 10px;
-    background-color: #ffff;
+    background-color: #ffff;    
+    transform: rotate(180deg);
+    margin-top: 20px; /* Espace supérieur */
+    margin-bottom: 20px; /* Espace inférieur */
     position: relative;
-    right: -50rem;
-    top: 60rem; 
-    left: 80px;
-    border-right: solid 5px black;
-    border-left: solid 5px red;
-    transform: scaleX(-1);
+    top: 60rem;
+    left: 700px;
 }
 
 .triggerSvgAnimationTwo {
     height: 40px;
     width: 40px;
-    background-color: red;
     position: relative; 
     top: 60rem;
     left: 95%;
 }
 
 .containerOfAboutSectionTwo {
-    height: 10px;
-    width: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Pour centrer horizontalement */
     color: #ffff;
     font-family: "Work-Sans", sans-serif;
     font-size: 14px;
     font-weight: bolder;
     position: relative;
     top: 4rem;
-    left: -500px; /*! Location */
+    left: -75%; /*! Location */
 }
 
 .questionBoxTwo {
@@ -580,4 +579,58 @@ ul>li {
     border-radius: 20px;
     position: relative;
     top: 50rem;
+}
+
+/*? Third part*/
+
+
+.lineSvgAnimationThree {
+    width: 0px;
+    height: 10px;
+    background-color: #ffff;
+    position: relative;
+    left: 0px;
+    top: 80rem;
+}
+
+.triggerSvgAnimationThree {
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    position: relative; 
+    top: 75rem;
+}
+
+.containerOfAboutSectionThree {
+    height: auto;
+    width: 30em;
+    position: relative;
+    top: 75rem;
+    left: 65rem;
+    color: #ffff;
+    font-family: "Work-Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.questionBoxThree {
+    height: auto;
+    width: 30em;
+    margin-bottom: 20px;
+    background-color: #D9D9D930;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+    position: relative;
+    left: 600px;
+}
+
+.informationBoxThree {
+    width: 30em;
+    background-color: #D9D9D930;
+    text-align: left;
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    left: 600px;
 }

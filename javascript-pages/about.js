@@ -61,7 +61,7 @@ const animationSvg = gsap.to(
   {
     width: 700,
     ease: "power1.out",
-    duration: 5,
+    duration: 20,
   },
 );
 
@@ -70,7 +70,7 @@ const animationBoxSections = gsap.to(
   {
     x: -800,
     ease: "power1.out",
-    duration: 5,
+    duration: 20 ,
 })
 
 ScrollTrigger.create({ /* Ligne animation */
@@ -91,14 +91,14 @@ ScrollTrigger.create({ /* Boîte */
 
 /* */
 
-const animationSvgLineTwo = gsap.to(".lineSvgAnimationTwo", {
-  width: 100,
+const animationSvgLineTwo = gsap.from(".lineSvgAnimationTwo", {
+  x: 1000,
   ease: "power1",
   duration: 5,
 })
 
 const animationBoxSectionTwo = gsap.to(".containerOfAboutSectionTwo", {
-  x: 550, 
+  x: 700, 
   ease: "power1.out",
   duration: 5,
 })
@@ -114,6 +114,42 @@ ScrollTrigger.create({ /* Ligne animation */
 ScrollTrigger.create({ /* Boîte */
   trigger: ".triggerSvgAnimationTwo",
   animation: animationBoxSectionTwo,
+  start: "top center", // Point de départ de l'animation
+  end: "center center",
+  scrub: true,
+})
+
+/* */
+
+
+const animationSvgThree = gsap.to(
+  ".lineSvgAnimationThree",
+  {
+    width: 700,
+    ease: "power1.out",
+    duration: 20,
+  },
+);
+
+const animationBoxSectionsThree = gsap.to(
+  ".containerOfAboutSectionThree", 
+  {
+    x: -800,
+    ease: "power1.out",
+    duration: 20 ,
+})
+
+ScrollTrigger.create({ /* Ligne animation */
+  trigger: ".triggerSvgAnimationThree",
+  start: "top center", // Point de départ de l'animation
+  end: "center center", // Point où l'animation se déclenche
+  animation: animationSvgThree, // L'animation GSAP que vous avez créée
+  scrub: true,
+})
+
+ScrollTrigger.create({ /* Boîte */
+  trigger: ".triggerSvgAnimationThree",
+  animation: animationBoxSectionsThree,
   start: "top center", // Point de départ de l'animation
   end: "center center",
   scrub: true,
